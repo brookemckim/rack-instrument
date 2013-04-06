@@ -70,7 +70,7 @@ class Rack::Instrument
     path = env['REQUEST_PATH'].downcase.slice(1..-1)
 
     # Convert / to _
-    path_key = path.gsub('/', '_')
+    path_key = path.gsub('/', '_').gsub('.', '_')
     path_key = 'index' if path_key.empty?
 
     instrument.increment 'requests.' + path_key
