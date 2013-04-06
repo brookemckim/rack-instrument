@@ -2,7 +2,7 @@
 
 Rack::Instrument is a rack middleware for instrumenting request time,
 total requests, and total requests per path. I am testing with
-statsd[https://github.com/reinh/statsd] as an instrumenter, but you can use any 
+[statsd](https://github.com/reinh/statsd) as an instrumenter, but you can use any 
 object that responds to increment or timing.
 
 ## Installation
