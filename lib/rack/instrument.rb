@@ -73,7 +73,7 @@ class Rack::Instrument
     path_key = path.gsub('/', '_').gsub('.', '_')
     path_key = 'index' if path_key.empty?
 
-    instrument.increment 'requests.' + path_key
+    instrument.increment 'paths.' + path_key
   end
 end
 
